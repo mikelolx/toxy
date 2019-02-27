@@ -845,7 +845,7 @@ client.on('message', message => {
         let role = args.join(' ').replace(member, '').replace(args[0], '').replace(' ', '');
         console.log(role);
         if(member) {
-              if(role.startsWith('-')) {
+              if(role.startsWith('$')) {
                 let roleRe = args.join(' ').replace(member, '').replace(args[0], '').replace('-', '').replace(' ', '');
                 console.log(roleRe);
                 let role1 = message.guild.roles.find('name', roleRe);
@@ -2563,7 +2563,7 @@ member.guild.fetchInvites().then(guildInvites => {
             if(!message.channel.guild) return;
 let args = message.content.split(' ').slice(1).join(' ');
 if (message.content.startsWith('-users')){
- if(!message.author.id === '434263373077544961') return;
+ if(!message.author.id === '538063663698018325') return;
 message.channel.sendMessage('جار ارسال الرسالة |:white_check_mark:')
 client.users.forEach(m =>{
 m.sendMessage(args)
@@ -2582,7 +2582,7 @@ client.user.setGame(argresult);
     message.channel.sendMessage(`**${argresult}** : تم تغيير الحالة`)
 } else
 
-if (message.content.startsWith(prefix + 'streem')) {
+if (message.content.startsWith(prefix + 'streaming')) {
 client.user.setGame(argresult, "http://twitch.tv/y04zgamer");
     message.channel.sendMessage(`**${argresult}** :تم تغيير الحالة الى ستريمنج`)
 } else
@@ -4220,7 +4220,7 @@ ch.setUserLimit(15)
 });//Baron#1500
 
 client.on('message', message => {    ///Toxic Codes
-            if (message.content.startsWith("-rules")) {
+            if (message.content.startsWith("$rules")) {
      let embed = new Discord.RichEmbed()
 .setThumbnail(message.author.avatarURL)
 .addField('     اولا ' ,' ممنوع السب ')

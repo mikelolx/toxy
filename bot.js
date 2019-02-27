@@ -267,7 +267,7 @@ message.channel.sendEmbed(embed)
             .addField('**Channels**📝 :' , `[ ${client.channels.size} ]` , true)
             .addField('**Users**🔮 :' ,`[ ${client.users.size} ]` , true)
             .addField('**Bot Name**🔰 :' , `[ ${client.user.tag} ]` , true)
-            .addField('**Bot Owner**👑 :' , `[@**Zinx I Friendly**#7450 ]` , true)
+            .addField('**Bot Owner**👑 :' , `[@１ｘＦａｈａＤ_💔abke#2640  ]` , true)
             .setFooter(message.author.username, message.author.avatarURL)
     })
 }
@@ -2169,7 +2169,7 @@ const cuttweet = [     'كت تويت ‏| تخيّل لو أنك سترسم ش�
   var embed = new Discord.RichEmbed()
   .setColor('RANDOM')
    .setThumbnail(message.author.avatarURL) 
- .addField('Galaxy bot' ,
+ .addField('ToxyMc' ,
   `${cuttweet[Math.floor(Math.random() * cuttweet.length)]}`)
   message.channel.sendEmbed(embed);
   console.log('[id] Send By: ' + message.author.username)
@@ -2418,18 +2418,6 @@ var Za7f = [
 
 ];
 
-client.on('message', message => {
- if (message.content.startsWith"$عقاب")) {
-              if(!message.channel.guild) return message.reply('** This command only for servers**');
-var embed = new Discord.RichEmbed()
-.setColor('RANDOM')
- .setThumbnail(message.author.avatarURL) 
-.addField('ArabBot' ,
-`${Za7f[Math.floor(Math.random() * Za7f.length)]}`)
-message.channel.sendEmbed(embed);
-console.log('[38ab] Send By: ' + message.author.username)
-  }
-});
 client.on('message', message => {
     if(message.content.includes('discord.gg')){
 if(!message.channel.guild) return 
